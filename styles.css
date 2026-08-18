@@ -229,6 +229,7 @@ td {
   padding: 14px 16px;
   border-bottom: 1px solid var(--line);
   text-align: right;
+  vertical-align: top;
 }
 
 th {
@@ -239,6 +240,15 @@ th {
 
 tbody tr {
   cursor: pointer;
+}
+
+tbody td:nth-child(3),
+#table-body td:nth-child(3) {
+  white-space: normal;
+  min-width: 260px;
+  max-width: 420px;
+  word-break: break-word;
+  line-height: 1.8;
 }
 
 tbody tr:hover,
