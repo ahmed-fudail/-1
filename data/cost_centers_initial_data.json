@@ -1,208 +1,259 @@
 {
   "schema_version": 1,
-  "dataset_name_ar": "بيانات مراكز التكلفة الأساسية",
-  "source_file": "cost_centers_initial_data.json",
+  "dataset_name_ar": "دليل مراكز التكلفة",
+  "source_file": "تفاصيل نماذج التكلفة.xlsx",
   "source_sheet": "نموذج تكلفة",
   "record_count": 22,
   "currency": "LYD",
+  "field_policy": {
+    "cost_center": "TEXT - must never be converted to number",
+    "booking_number": "TEXT - preserve punctuation and leading zeros",
+    "amount_lyd": "NUMBER",
+    "contract_details": "TEXT",
+    "notes": "TEXT - preserve source value exactly"
+  },
   "records": [
     {
+      "id": "CC-0001",
+      "booking_number": "24076-JO-L",
+      "cost_center": "64019",
+      "amount_lyd": 450000.0,
+      "contract_details": "توفير عمالة لمدة تسعين 90 يوم لغرض ترميم القواعد الخرسانية بالمصفاة",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 2,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0002",
+      "booking_number": "24052-JO-L",
+      "cost_center": "64019",
+      "amount_lyd": 300000.0,
+      "contract_details": "مشروع تركيب مضخة الزيت الثقيل 403B",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 3,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0003",
+      "booking_number": "24066-JO-L",
+      "cost_center": "64019",
+      "amount_lyd": 400000.0,
+      "contract_details": "توفير رافعة لإزالة وأعادة تركيب السقف العائم للخزان 141",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 4,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0004",
+      "booking_number": "REF-220104- JO.L",
+      "cost_center": "62030",
+      "amount_lyd": 250000.0,
+      "contract_details": "صيانة مكاتب المصفاة",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 5,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0005",
+      "booking_number": "REF-NO.220127",
+      "cost_center": "62111",
+      "amount_lyd": 300000.0,
+      "contract_details": "صيانة الخزان 141",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 6,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0006",
+      "booking_number": "TP-212309F",
+      "cost_center": "AFE-2456",
+      "amount_lyd": 5520000.0,
+      "contract_details": "إنشاء خزان زيت الوقود الثقيل",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 7,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0007",
+      "booking_number": "REF-22273 JO.L",
+      "cost_center": "62031",
+      "amount_lyd": 3000000.0,
+      "contract_details": "تجديد منظومة الإضاءة بمنطقة الخزانات للمصفاة",
+      "notes": "TP-210220",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 8,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0008",
+      "booking_number": "REF-22272 JO.L",
+      "cost_center": "62112",
+      "amount_lyd": 2300000.0,
+      "contract_details": "تجديد شبكة مجاري المصفاة",
+      "notes": "TP-206312",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 9,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0009",
+      "booking_number": "REF-22330 JO.L",
+      "cost_center": "62029-62111",
+      "amount_lyd": 600000.0,
+      "contract_details": "أعمال تنظيف الخزان 130-140",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 10,
+      "is_archived": false
+    },
+    {
       "id": "CC-0010",
-      "cost_center": "63014",
-      "booking_number": "REF-24052-JO-L",
-      "contract_details": "مضخة 403",
-      "notes": "13-12-20222",
-      "amount_lyd": 5000.0,
-      "needs_review": true
+      "booking_number": "REF-22352 JO.L",
+      "cost_center": "62030",
+      "amount_lyd": 400000.0,
+      "contract_details": "تنظيف حوض مدخل مياه التبريد",
+      "notes": "\"13-12-20222\"",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 11,
+      "is_archived": false
     },
     {
       "id": "CC-0011",
+      "booking_number": "REF-23013 JO.L",
       "cost_center": "63014",
-      "booking_number": "REF-24053-JO-L",
-      "contract_details": "مضخة 403",
-      "notes": "13-03-2023",
-      "amount_lyd": 5500.0,
-      "needs_review": false
+      "amount_lyd": 300000.0,
+      "contract_details": "تنظيف حوض مدخل مياه التبريد",
+      "notes": "\"13-03-2023\"",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 12,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0012",
+      "booking_number": "REF-23053 JO.L",
+      "cost_center": "63014",
+      "amount_lyd": 400000.0,
+      "contract_details": "صيانة القواعد الخرسانية لمضخات مياه التبريد",
+      "notes": "P-79/80/81",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 13,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0013",
+      "booking_number": "REF-23099 JO.L",
+      "cost_center": "63014",
+      "amount_lyd": 25000.0,
+      "contract_details": "رش وطلاء خطوط الشحن بالمصفاة",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 14,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0014",
+      "booking_number": "REF-212/2023",
+      "cost_center": "AFE-8450",
+      "amount_lyd": 3000000.0,
+      "contract_details": "تحديث منظومة الحماية المهبطيية للمصفاة",
+      "notes": "TCP-808",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 15,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0015",
+      "booking_number": "REF-23297 JO.L",
+      "cost_center": "63014",
+      "amount_lyd": 550000.0,
+      "contract_details": "توفير عمالة فنية لعمرة المصفاة",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 16,
+      "is_archived": false
+    },
+    {
+      "id": "CC-0016",
+      "booking_number": "REF-23271 JO.L",
+      "cost_center": "63093",
+      "amount_lyd": 1500000.0,
+      "contract_details": "استبدال قواعد وصمامات وخطوط الشحن برصيف المصفاة",
+      "notes": "22-11-2023",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 17,
+      "is_archived": false
     },
     {
       "id": "CC-0017",
-      "cost_center": "63014",
-      "booking_number": "REF-24054-JO-L",
-      "contract_details": "خزان 141",
-      "notes": "12-05-2023",
-      "amount_lyd": 12000.0,
-      "needs_review": false
+      "booking_number": "REF-335/2023",
+      "cost_center": "AFE-2451",
+      "amount_lyd": 11600000.0,
+      "contract_details": "تحديث منظومة العدادات بالمصفاة",
+      "notes": "45058",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 18,
+      "is_archived": false
     },
     {
       "id": "CC-0018",
-      "cost_center": "63014",
-      "booking_number": "REF-24055-JO-L",
-      "contract_details": "مبادل حراري 303",
-      "notes": "07-09-2024",
-      "amount_lyd": 7500.0,
-      "needs_review": false
+      "booking_number": "REF-24052 JO.L",
+      "cost_center": "64019",
+      "amount_lyd": 300000.0,
+      "contract_details": "تركيب مضخة زيت الوقود الثقيل P-403 B",
+      "notes": "45542",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 19,
+      "is_archived": false
     },
     {
       "id": "CC-0019",
-      "cost_center": "63014",
-      "booking_number": "REF-24056-JO-L",
-      "contract_details": "مياه التبريد",
+      "booking_number": "REF-25029 JO.L",
+      "cost_center": "65008",
+      "amount_lyd": 85000.0,
+      "contract_details": "إصلاح القواعد الخرسانية للمضخات 101 A والمبادل الحراري 303",
       "notes": "24-07-2024",
-      "amount_lyd": 3200.0,
-      "needs_review": false
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 20,
+      "is_archived": false
     },
     {
       "id": "CC-0020",
-      "cost_center": "63014",
-      "booking_number": "REF-24057-JO-L",
-      "contract_details": "منظومة الحماية المهبطية",
-      "notes": "15-05-2025",
-      "amount_lyd": 8100.0,
-      "needs_review": false
+      "booking_number": "REF-25016 JO.L",
+      "cost_center": "65008",
+      "amount_lyd": 100000.0,
+      "contract_details": "إجراء صيانة السقف المعلق للضواغط",
+      "notes": "اعتماد مبكر وغير مسيل 2025",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 21,
+      "is_archived": false
     },
     {
       "id": "CC-0021",
-      "cost_center": "63014",
-      "booking_number": "REF-24058-JO-L",
-      "contract_details": "خطوط الشحن",
-      "notes": "TP-210220",
-      "amount_lyd": 15000.0,
-      "needs_review": false
+      "booking_number": "REF-25017 JO.L",
+      "cost_center": "65008",
+      "amount_lyd": 60000.0,
+      "contract_details": "صيانة دورات المياه الخارجية وخط المياه العذبة للمبنى الجديد بالمصفاة",
+      "notes": "15-05-2025",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 22,
+      "is_archived": false
     },
     {
       "id": "CC-0022",
-      "cost_center": "63014",
-      "booking_number": "REF-24059-JO-L",
-      "contract_details": "المصفاة",
-      "notes": "P-79/80/81",
-      "amount_lyd": 25000.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0023",
-      "cost_center": "62029-62111",
-      "booking_number": "AFE-2456",
-      "contract_details": "زيت الوقود",
-      "notes": "صيانة",
-      "amount_lyd": 9200.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0024",
-      "cost_center": "63014",
-      "booking_number": "REF-24060-JO-L",
-      "contract_details": "عامل حفاز",
-      "notes": "تنظيف",
-      "amount_lyd": 4300.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0025",
-      "cost_center": "63014",
-      "booking_number": "REF-24061-JO-L",
-      "contract_details": "الخرسانية",
-      "notes": "قواعد",
-      "amount_lyd": 1800.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0026",
-      "cost_center": "63014",
-      "booking_number": "REF-24062-JO-L",
-      "contract_details": "عدادات قياس",
-      "notes": "تركيب",
-      "amount_lyd": 6500.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0027",
-      "cost_center": "63014",
-      "booking_number": "REF-24063-JO-L",
-      "contract_details": "صيانة الخزان 141",
-      "notes": "ترميم",
-      "amount_lyd": 14500.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0028",
-      "cost_center": "63014",
-      "booking_number": "REF-24064-JO-L",
-      "contract_details": "أعمال السقف العائم للخزان 141",
-      "notes": "استبدال",
-      "amount_lyd": 22000.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0029",
-      "cost_center": "63014",
-      "booking_number": "REF-24065-JO-L",
-      "contract_details": "إنارة المصفاة",
-      "notes": "تحديث",
-      "amount_lyd": 3800.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0030",
-      "cost_center": "63014",
-      "booking_number": "REF-24066-JO-L",
-      "contract_details": "ضواغط الهواء",
-      "notes": "صيانة دورية",
-      "amount_lyd": 9600.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0031",
-      "cost_center": "63014",
-      "booking_number": "REF-24067-JO-L",
-      "contract_details": "مضخة P-403 B",
-      "notes": "عمرة",
-      "amount_lyd": 7200.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0032",
-      "cost_center": "63014",
-      "booking_number": "REF-24068-JO-L",
-      "contract_details": "ونش",
-      "notes": "شراء",
-      "amount_lyd": 11500.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0033",
-      "cost_center": "63014",
-      "booking_number": "REF-24069-JO-L",
-      "contract_details": "مجاري الصرف",
-      "notes": "تنظيف",
-      "amount_lyd": 2900.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0034",
-      "cost_center": "63014",
-      "booking_number": "REF-24070-JO-L",
-      "contract_details": "قوى عاملة إضافية",
-      "notes": "عقد مؤقت",
-      "amount_lyd": 5400.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0035",
-      "cost_center": "63014",
-      "booking_number": "REF-24071-JO-L",
-      "contract_details": "صمامات التحكم",
-      "notes": "معايرة",
-      "amount_lyd": 4100.0,
-      "needs_review": false
-    },
-    {
-      "id": "CC-0036",
-      "cost_center": "63014",
-      "booking_number": "REF-24072-JO-L",
-      "contract_details": "مبادل 303",
-      "notes": "غسيل كيميائي",
-      "amount_lyd": 3500.0,
-      "needs_review": false
+      "booking_number": "REF-25015",
+      "cost_center": "6-025-610-00001 /229 - 240",
+      "amount_lyd": 160000.0,
+      "contract_details": "تحديد مواصفات العامل الحفاز المستعمل بالمصفاة",
+      "notes": "",
+      "source_sheet": "نموذج تكلفة",
+      "source_row": 23,
+      "is_archived": false
     }
   ]
 }
