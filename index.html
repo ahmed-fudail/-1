@@ -41,6 +41,11 @@
 
     <section id="summary" class="summary" aria-label="ملخص البيانات"></section>
 
+    <section class="department-panel glass" aria-label="اختيار القسم">
+      <div class="department-heading"><span>عرض بيانات القسم</span><small id="departmentCount">0 أقسام</small></div>
+      <div id="departmentFilters" class="department-filters"></div>
+    </section>
+
     <section class="toolbar glass">
       <label class="search"><span>⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="ابحث بالمركز، الحجز، المعدة، الوصف أو الملاحظات…"><button id="clearSearch" type="button" aria-label="مسح البحث">×</button></label>
       <div class="filters" role="group" aria-label="تصفية النتائج">
@@ -57,7 +62,7 @@
   <dialog id="detailDialog" class="detail-dialog">
     <article class="detail-card glass">
       <button id="closeDetail" class="icon-btn close" aria-label="إغلاق">×</button>
-      <div class="detail-head"><span id="detailStatus" class="status"></span><p>بطاقة مركز التكلفة</p><h2 id="detailTitle"></h2></div>
+      <div class="detail-head"><div class="detail-badges"><span id="detailDepartment" class="department-badge"></span><span id="detailStatus" class="status"></span></div><p>بطاقة مركز التكلفة</p><h2 id="detailTitle"></h2></div>
       <div class="detail-grid">
         <div class="field featured"><span>مركز التكلفة</span><strong id="detailCostCenter" dir="ltr"></strong><button id="copyCenter" class="mini">نسخ</button></div>
         <div class="field"><span>رقم الحجز</span><strong id="detailBooking" dir="ltr"></strong></div>

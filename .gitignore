@@ -1,3 +1,5 @@
 __pycache__/
 .DS_Store
 *.log
+data/backups/
+update_from_excel.*.backup.py
