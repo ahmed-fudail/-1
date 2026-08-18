@@ -10,7 +10,7 @@
     "booking_number": "TEXT - preserve punctuation and leading zeros",
     "amount_lyd": "NUMBER",
     "contract_details": "TEXT",
-    "notes": "TEXT - preserve source value exactly"
+    "notes": "TEXT - clean surrounding quotes; display valid dates as DD-MM-YYYY; preserve operational codes"
   },
   "records": [
     {
@@ -22,7 +22,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 2,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0002",
@@ -33,7 +34,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 3,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0003",
@@ -44,7 +46,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 4,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0004",
@@ -55,7 +58,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 5,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0005",
@@ -66,7 +70,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 6,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0006",
@@ -77,7 +82,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 7,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0007",
@@ -88,7 +94,8 @@
       "notes": "TP-210220",
       "source_sheet": "نموذج تكلفة",
       "source_row": 8,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0008",
@@ -99,7 +106,8 @@
       "notes": "TP-206312",
       "source_sheet": "نموذج تكلفة",
       "source_row": 9,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0009",
@@ -110,7 +118,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 10,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0010",
@@ -118,10 +127,11 @@
       "cost_center": "62030",
       "amount_lyd": 400000.0,
       "contract_details": "تنظيف حوض مدخل مياه التبريد",
-      "notes": "\"13-12-20222\"",
+      "notes": "13-12-2022",
       "source_sheet": "نموذج تكلفة",
       "source_row": 11,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0011",
@@ -129,10 +139,11 @@
       "cost_center": "63014",
       "amount_lyd": 300000.0,
       "contract_details": "تنظيف حوض مدخل مياه التبريد",
-      "notes": "\"13-03-2023\"",
+      "notes": "13-03-2023",
       "source_sheet": "نموذج تكلفة",
       "source_row": 12,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0012",
@@ -143,7 +154,8 @@
       "notes": "P-79/80/81",
       "source_sheet": "نموذج تكلفة",
       "source_row": 13,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0013",
@@ -154,7 +166,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 14,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0014",
@@ -165,7 +178,8 @@
       "notes": "TCP-808",
       "source_sheet": "نموذج تكلفة",
       "source_row": 15,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0015",
@@ -176,7 +190,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 16,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0016",
@@ -187,7 +202,8 @@
       "notes": "22-11-2023",
       "source_sheet": "نموذج تكلفة",
       "source_row": 17,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0017",
@@ -195,10 +211,11 @@
       "cost_center": "AFE-2451",
       "amount_lyd": 11600000.0,
       "contract_details": "تحديث منظومة العدادات بالمصفاة",
-      "notes": "45058",
+      "notes": "12-05-2023",
       "source_sheet": "نموذج تكلفة",
       "source_row": 18,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0018",
@@ -206,10 +223,11 @@
       "cost_center": "64019",
       "amount_lyd": 300000.0,
       "contract_details": "تركيب مضخة زيت الوقود الثقيل P-403 B",
-      "notes": "45542",
+      "notes": "07-09-2024",
       "source_sheet": "نموذج تكلفة",
       "source_row": 19,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0019",
@@ -220,7 +238,8 @@
       "notes": "24-07-2024",
       "source_sheet": "نموذج تكلفة",
       "source_row": 20,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0020",
@@ -231,7 +250,8 @@
       "notes": "اعتماد مبكر وغير مسيل 2025",
       "source_sheet": "نموذج تكلفة",
       "source_row": 21,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0021",
@@ -242,7 +262,8 @@
       "notes": "15-05-2025",
       "source_sheet": "نموذج تكلفة",
       "source_row": 22,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     },
     {
       "id": "CC-0022",
@@ -253,7 +274,8 @@
       "notes": "",
       "source_sheet": "نموذج تكلفة",
       "source_row": 23,
-      "is_archived": false
+      "is_archived": false,
+      "needs_review": false
     }
   ]
 }

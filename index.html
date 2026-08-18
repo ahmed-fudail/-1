@@ -1,98 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>دليل مراكز التكلفة</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div>
-          <p class="eyebrow">قاعدة بيانات مركزية</p>
-          <h1>دليل مراكز التكلفة</h1>
-        </div>
-        <div class="header-meta">
-          <span id="record-count">0</span>
-          <small>سجل</small>
-        </div>
-      </header>
-
-      <section class="summary" id="summary"></section>
-
-      <section class="toolbar">
-        <label class="search-box" for="searchInput">
-          <span>🔎</span>
-          <input
-            id="searchInput"
-            type="search"
-            placeholder="ابحث باسم مركز التكلفة، رقم الحجز، الوصف أو الملاحظات..."
-            aria-label="البحث في البيانات"
-          />
-        </label>
-        <div class="filters">
-          <button class="filter-btn active" data-filter="all">الكل</button>
-          <button class="filter-btn" data-filter="review">تحتاج مراجعة</button>
-          <button class="filter-btn" data-filter="non-review">غير مطلوبة</button>
-        </div>
-      </section>
-
-      <section id="detailPanel" class="detail-panel hidden" aria-live="polite">
-        <div class="detail-header">
-          <div>
-            <p class="eyebrow">تفاصيل المركز</p>
-            <h2 id="detailTitle">مركز التكلفة</h2>
-          </div>
-          <button id="shareBtn" class="share-btn" type="button">مشاركة</button>
-        </div>
-
-        <div class="detail-grid">
-          <div class="detail-item">
-            <span class="detail-label">مركز التكلفة</span>
-            <strong id="detailCostCenter">-</strong>
-          </div>
-          <div class="detail-item">
-            <span class="detail-label">رقم الحجز</span>
-            <strong id="detailBooking">-</strong>
-          </div>
-          <div class="detail-item detail-wide">
-            <span class="detail-label">تفاصيل العقد</span>
-            <strong id="detailContract">-</strong>
-          </div>
-          <div class="detail-item detail-wide">
-            <span class="detail-label">ملاحظات</span>
-            <strong id="detailNotes">-</strong>
-          </div>
-          <div class="detail-item">
-            <span class="detail-label">المبلغ</span>
-            <strong id="detailAmount">-</strong>
-          </div>
-          <div class="detail-item">
-            <span class="detail-label">الحالة</span>
-            <strong id="detailStatus">-</strong>
-          </div>
-        </div>
-      </section>
-
-      <main>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>مركز التكلفة</th>
-                <th>رقم الحجز</th>
-                <th>تفاصيل العقد</th>
-                <th>ملاحظات</th>
-                <th>المبلغ (LYD)</th>
-              </tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-          </table>
-        </div>
-      </main>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071a1a">
+  <title>دليل مراكز التكلفة</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="splashScreen" class="splash-screen" aria-label="جارٍ تحميل دليل مراكز التكلفة">
+    <div class="splash-stage">
+      <span class="splash-ring ring-one"></span>
+      <span class="splash-ring ring-two"></span>
+      <span class="splash-particle particle-one"></span>
+      <span class="splash-particle particle-two"></span>
+      <span class="splash-particle particle-three"></span>
+      <img class="splash-logo" src="assets/images/soc-logo.png" alt="شعار الشركة">
     </div>
+    <h2>دليل مراكز التكلفة</h2>
+    <p>جارٍ تجهيز البيانات…</p>
+    <div class="loading-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+  <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
+  <main class="shell">
+    <header class="hero glass">
+      <div class="brand"><div class="logo-wrap" aria-label="شعار الشركة"><span class="logo-orbit" aria-hidden="true"></span><img class="soc-logo" src="assets/images/soc-logo.png" alt="شعار الشركة"></div><div><p class="kicker">قاعدة بيانات محلية وآمنة</p><h1>دليل مراكز التكلفة</h1><p class="sub">بحث سريع، بطاقات واضحة، ومشاركة فورية</p></div></div>
+      <div class="header-tools">
+        <label class="theme-picker" title="تغيير الثيم">
+          <span>الثيم</span>
+          <select id="themeSelect" aria-label="اختيار الثيم">
+            <option value="light">فاتح احترافي</option>
+            <option value="dark">داكن مريح</option>
+            <option value="blue">أزرق مؤسسي</option>
+            <option value="sand">رملي هادئ</option>
+          </select>
+        </label>
+        <div class="count"><strong id="record-count">0</strong><span>سجل ظاهر</span></div>
+      </div>
+    </header>
 
-    <script src="script.js"></script>
-  </body>
+    <section id="summary" class="summary" aria-label="ملخص البيانات"></section>
+
+    <section class="toolbar glass">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="ابحث بالمركز، الحجز، المعدة، الوصف أو الملاحظات…"><button id="clearSearch" type="button" aria-label="مسح البحث">×</button></label>
+      <div class="filters" role="group" aria-label="تصفية النتائج">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="review">تحتاج مراجعة</button>
+        <button class="filter-btn" data-filter="clear">مكتملة البيانات</button>
+      </div>
+    </section>
+
+    <div id="search-hint" class="search-hint" aria-live="polite"></div>
+    <section id="cards" class="cards" aria-live="polite"></section>
+  </main>
+
+  <dialog id="detailDialog" class="detail-dialog">
+    <article class="detail-card glass">
+      <button id="closeDetail" class="icon-btn close" aria-label="إغلاق">×</button>
+      <div class="detail-head"><span id="detailStatus" class="status"></span><p>بطاقة مركز التكلفة</p><h2 id="detailTitle"></h2></div>
+      <div class="detail-grid">
+        <div class="field featured"><span>مركز التكلفة</span><strong id="detailCostCenter" dir="ltr"></strong><button id="copyCenter" class="mini">نسخ</button></div>
+        <div class="field"><span>رقم الحجز</span><strong id="detailBooking" dir="ltr"></strong></div>
+        <div class="field"><span>القيمة المالية</span><strong id="detailAmount"></strong></div>
+        <div class="field wide"><span>تفاصيل العقد أو العمل</span><strong id="detailContract"></strong></div>
+        <div class="field wide"><span>الملاحظات</span><strong id="detailNotes"></strong></div>
+      </div>
+      <div class="detail-actions"><button id="shareBtn" class="primary">مشاركة البطاقة</button><button id="copyCard" class="secondary">نسخ التفاصيل</button></div>
+    </article>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js" defer></script>
+</body>
 </html>
