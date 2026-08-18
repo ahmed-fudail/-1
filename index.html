@@ -38,18 +38,53 @@
         </div>
       </section>
 
+      <section id="detailPanel" class="detail-panel hidden" aria-live="polite">
+        <div class="detail-header">
+          <div>
+            <p class="eyebrow">تفاصيل المركز</p>
+            <h2 id="detailTitle">مركز التكلفة</h2>
+          </div>
+          <button id="shareBtn" class="share-btn" type="button">مشاركة</button>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-item">
+            <span class="detail-label">مركز التكلفة</span>
+            <strong id="detailCostCenter">-</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">رقم الحجز</span>
+            <strong id="detailBooking">-</strong>
+          </div>
+          <div class="detail-item detail-wide">
+            <span class="detail-label">تفاصيل العقد</span>
+            <strong id="detailContract">-</strong>
+          </div>
+          <div class="detail-item detail-wide">
+            <span class="detail-label">ملاحظات</span>
+            <strong id="detailNotes">-</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">المبلغ</span>
+            <strong id="detailAmount">-</strong>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">الحالة</span>
+            <strong id="detailStatus">-</strong>
+          </div>
+        </div>
+      </section>
+
       <main>
         <div class="table-wrap">
           <table>
             <thead>
               <tr>
-                <th>المعرف</th>
                 <th>مركز التكلفة</th>
                 <th>رقم الحجز</th>
                 <th>تفاصيل العقد</th>
                 <th>ملاحظات</th>
                 <th>المبلغ (LYD)</th>
-                <th>الحالة</th>
               </tr>
             </thead>
             <tbody id="table-body"></tbody>
