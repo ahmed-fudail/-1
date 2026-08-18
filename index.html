@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل مراكز التكلفة</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div>
+          <p class="eyebrow">قاعدة بيانات مركزية</p>
+          <h1>دليل مراكز التكلفة</h1>
+        </div>
+        <div class="header-meta">
+          <span id="record-count">0</span>
+          <small>سجل</small>
+        </div>
+      </header>
+
+      <section class="summary" id="summary"></section>
+
+      <section class="toolbar">
+        <label class="search-box" for="searchInput">
+          <span>🔎</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="ابحث باسم مركز التكلفة، رقم الحجز، الوصف أو الملاحظات..."
+            aria-label="البحث في البيانات"
+          />
+        </label>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="review">تحتاج مراجعة</button>
+          <button class="filter-btn" data-filter="non-review">غير مطلوبة</button>
+        </div>
+      </section>
+
+      <main>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>المعرف</th>
+                <th>مركز التكلفة</th>
+                <th>رقم الحجز</th>
+                <th>تفاصيل العقد</th>
+                <th>ملاحظات</th>
+                <th>المبلغ (LYD)</th>
+                <th>الحالة</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

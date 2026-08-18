@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "dataset_name_ar": "بيانات مراكز التكلفة الأساسية",
+  "source_file": "cost_centers_initial_data.json",
+  "source_sheet": "نموذج تكلفة",
+  "record_count": 22,
+  "currency": "LYD",
+  "records": [
+    {
+      "id": "CC-0010",
+      "cost_center": "63014",
+      "booking_number": "REF-24052-JO-L",
+      "contract_details": "مضخة 403",
+      "notes": "13-12-20222",
+      "amount_lyd": 5000.0,
+      "needs_review": true
+    },
+    {
+      "id": "CC-0011",
+      "cost_center": "63014",
+      "booking_number": "REF-24053-JO-L",
+      "contract_details": "مضخة 403",
+      "notes": "13-03-2023",
+      "amount_lyd": 5500.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0017",
+      "cost_center": "63014",
+      "booking_number": "REF-24054-JO-L",
+      "contract_details": "خزان 141",
+      "notes": "12-05-2023",
+      "amount_lyd": 12000.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0018",
+      "cost_center": "63014",
+      "booking_number": "REF-24055-JO-L",
+      "contract_details": "مبادل حراري 303",
+      "notes": "07-09-2024",
+      "amount_lyd": 7500.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0019",
+      "cost_center": "63014",
+      "booking_number": "REF-24056-JO-L",
+      "contract_details": "مياه التبريد",
+      "notes": "24-07-2024",
+      "amount_lyd": 3200.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0020",
+      "cost_center": "63014",
+      "booking_number": "REF-24057-JO-L",
+      "contract_details": "منظومة الحماية المهبطية",
+      "notes": "15-05-2025",
+      "amount_lyd": 8100.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0021",
+      "cost_center": "63014",
+      "booking_number": "REF-24058-JO-L",
+      "contract_details": "خطوط الشحن",
+      "notes": "TP-210220",
+      "amount_lyd": 15000.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0022",
+      "cost_center": "63014",
+      "booking_number": "REF-24059-JO-L",
+      "contract_details": "المصفاة",
+      "notes": "P-79/80/81",
+      "amount_lyd": 25000.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0023",
+      "cost_center": "62029-62111",
+      "booking_number": "AFE-2456",
+      "contract_details": "زيت الوقود",
+      "notes": "صيانة",
+      "amount_lyd": 9200.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0024",
+      "cost_center": "63014",
+      "booking_number": "REF-24060-JO-L",
+      "contract_details": "عامل حفاز",
+      "notes": "تنظيف",
+      "amount_lyd": 4300.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0025",
+      "cost_center": "63014",
+      "booking_number": "REF-24061-JO-L",
+      "contract_details": "الخرسانية",
+      "notes": "قواعد",
+      "amount_lyd": 1800.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0026",
+      "cost_center": "63014",
+      "booking_number": "REF-24062-JO-L",
+      "contract_details": "عدادات قياس",
+      "notes": "تركيب",
+      "amount_lyd": 6500.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0027",
+      "cost_center": "63014",
+      "booking_number": "REF-24063-JO-L",
+      "contract_details": "صيانة الخزان 141",
+      "notes": "ترميم",
+      "amount_lyd": 14500.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0028",
+      "cost_center": "63014",
+      "booking_number": "REF-24064-JO-L",
+      "contract_details": "أعمال السقف العائم للخزان 141",
+      "notes": "استبدال",
+      "amount_lyd": 22000.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0029",
+      "cost_center": "63014",
+      "booking_number": "REF-24065-JO-L",
+      "contract_details": "إنارة المصفاة",
+      "notes": "تحديث",
+      "amount_lyd": 3800.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0030",
+      "cost_center": "63014",
+      "booking_number": "REF-24066-JO-L",
+      "contract_details": "ضواغط الهواء",
+      "notes": "صيانة دورية",
+      "amount_lyd": 9600.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0031",
+      "cost_center": "63014",
+      "booking_number": "REF-24067-JO-L",
+      "contract_details": "مضخة P-403 B",
+      "notes": "عمرة",
+      "amount_lyd": 7200.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0032",
+      "cost_center": "63014",
+      "booking_number": "REF-24068-JO-L",
+      "contract_details": "ونش",
+      "notes": "شراء",
+      "amount_lyd": 11500.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0033",
+      "cost_center": "63014",
+      "booking_number": "REF-24069-JO-L",
+      "contract_details": "مجاري الصرف",
+      "notes": "تنظيف",
+      "amount_lyd": 2900.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0034",
+      "cost_center": "63014",
+      "booking_number": "REF-24070-JO-L",
+      "contract_details": "قوى عاملة إضافية",
+      "notes": "عقد مؤقت",
+      "amount_lyd": 5400.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0035",
+      "cost_center": "63014",
+      "booking_number": "REF-24071-JO-L",
+      "contract_details": "صمامات التحكم",
+      "notes": "معايرة",
+      "amount_lyd": 4100.0,
+      "needs_review": false
+    },
+    {
+      "id": "CC-0036",
+      "cost_center": "63014",
+      "booking_number": "REF-24072-JO-L",
+      "contract_details": "مبادل 303",
+      "notes": "غسيل كيميائي",
+      "amount_lyd": 3500.0,
+      "needs_review": false
+    }
+  ]
+}
